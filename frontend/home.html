@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Management System</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Meeting Management System</h1>
+        <button id="logout">Logout</button>
+    </div>
+
+    <div class="create">
+        <a href="#create" class="create-btn">Create Meeting</a>
+    </div>
+
+    <div class="container" id="create">
+        <form id="create-meeting-form">
+            <label>Name:</label><br>
+            <input type="text" name="name" id="name" size="5" placeholder="Meeting 1"><br>
+            <label>Location:</label><br>
+            <input type="text" name="location" id="location" size="5" placeholder="Hall 2"><br>
+            <label>Date:</label><br>
+            <input type="text" name="date" id="date" size="5" placeholder="dd-mm-yy"><br>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="showAll">
+        <table class="table">
+        </table>
+    </div>
+
+
+</body>
+</html>
